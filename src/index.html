@@ -94,21 +94,23 @@
         <legend>An interesting fact about you!</legend>
         <label class="fieldset__label" for="yes-radio-cats">
           Do you love cats?
-          <label class="fieldset__label-cats-yes" for="yes-radio-cats">
+          <label for="yes-radio-cats">
             <input
               type="radio"
               id="yes-radio-cats"
               name="cats"
               value="yes"
-            >Yes
+            >
+            Yes
           </label>
-          <label class="fieldset__label-cats-no" for="no-radio-cats">
+          <label for="no-radio-cats">
             <input
               type="radio"
               id="no-radio-cats"
               name="cats"
               value="no"
-            >No
+            >
+            No
           </label>
         </label>
         <label class="fieldset__label" for="color">
@@ -166,7 +168,8 @@
       </fieldset>
       <button
         type="submit"
-        onsubmit="onSubmit()"
+        form="onSubmit()"
+        name="submit"
         >
           Submit
       </button>
